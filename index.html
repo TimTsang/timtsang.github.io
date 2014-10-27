@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>TimTsang的个人简历</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="css/impress.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>您的浏览器 <b>不兼容这个网页, 所以你看到的是一个简化版本的演示。</p>
+    <p>想看到更炫的效果请换个浏览器吧！例如： <b>谷歌浏览器Chrome</b>, <b>Safari</b>或者<b>火狐浏览器Firefox</b>。</p>
+</div>
+<div id="impress">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>我是一个喜欢撸码 <b>又</b> 喜欢设计的人。</q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>因为我觉得只是撸码就太无聊了！而且觉得自己对前端界面的设计还是挺感兴趣的，所以我选择了前端，既能撸码，又能享受一下设计的艺术。感觉这样子还是挺有意思的！</q>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>好了，接下来还是做一下简单地自我介绍吧！</q>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">我叫曾家栩,也可以叫我</span>
+        <h1>TimTsang<sup>*</sup></h1>
+        <span class="footnote"><sup>*</sup>这是我的英文名字</span>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>我来自<strong>广东茂名</strong> <br/>
+        就读于<a href="http://jsjxy.gdut.edu.cn/">广东工业大学计算机学院</a> <br/>
+        本人<strong>大三屌丝</strong>一枚</p>将于2016年6月毕业
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>接下来谈谈个人的一些<span class="thoughts">职业技能</span></p>
+    </div> 
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>我<b>暂时</b>拥有的职业技能</p>
+    </div>
+
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>至于<b class="positioning">JavaScript</b>, <b class="rotating">CSS</b>和<b class="scaling">HTML</b>当然是做前端必须要会的技术</p>
+    </div>
+
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>自从独立做了一个<b class="imagination">ExtJS</b>的项目后就熟悉了<b>AJAX</b>的运作机制
+    </div>
+
+	<div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>之前和其他人合做过一个报名系统的项目后熟悉了<b>JQuery</b>,当然在开发中,前面两个项目都用到<b class="imagination">SVN</b>作版本管理</p>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>至于其他的一些技能...</p>
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">熟悉</span> <span class="you">Prezi,</span> <span class="noticed">Rational Rose,</span> <span class="its">Photoshop</span> <span class="in">等</span> <b>一些<sup>软件</sup></b>的使用</p>
+        <span class="footnote">另外，之前也了解了一下JQueryMobile + PhoneGap的手机开发</span>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>使用空格键或方向键来浏览</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>点击左边或者右边来浏览</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
