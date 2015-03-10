@@ -1,472 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="世界上最恐怖的事是，比你优秀的人比你还努力。">
-    <meta name="author" content="TimTsang">
-    <meta name="keywords" content="TimTsang,曾家栩,个人主页,zengjiaxu" />
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="世界上最恐怖的事是，比你优秀的人比你还努力。">
+<meta name="author" content="TimTsang">
+<meta name="keywords" content="TimTsang,曾家栩,个人主页,zengjiaxu" />
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+<title>TimTsang -- 个人主页</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#nav">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">TimTsang</a> </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul id="nav" class="nav navbar-nav">
+        <li class="menu-item"><a class="smoothScroll" href="#about" title="关于我"><i class="icon-user"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#photograph" title="我的摄影作品"><i class="icon-camera"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#project" title="我所做过的项目"><i class="icon-briefcase"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#calligraphy" title="我的书法作品"><i class="icon-file"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#contact" title="联系我吧"><i class="icon-envelope"></i></a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<div id="headerwrap">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-12">
+        <h1>Tim Tsang</h1>
+        <br/>
+        <h3>phone : 13611480619</h3>
+        <br/>
+        <h3>QQ : 779280509</h3>
+        <br/>
+        <h3>Email : tim_tsang@yeah.net</h3>
+        <br/>
+        <h3>University : Guangdong University of Technology</h3>
+        <br/>
+      </div>
+      <!--/.col-lg-12 --> 
+    </div>
+    <!--/.row --> 
+  </div>
+  <!--/.container --> 
+</div>
+<!--/.#headerwrap --> 
 
-    <title>TimTsang - 个人主页</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <!--
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-    <script src="assets/js/Chart.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body data-spy="scroll" data-offset="0" data-target="#nav">
-
-	<div id="section-topbar">
-		<div id="topbar-inner">
-			<div class="container">
-				<div class="row">
-					<div class="dropdown">
-						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
-						</ul><!--/ uL#nav -->
-					</div><!-- /.dropdown -->
-
-					<div class="clear"></div>
-				</div><!--/.row -->
-			</div><!--/.container -->
-
-			<div class="clear"></div>
-		</div><!--/ #topbar-inner -->
-	</div><!--/ #section-topbar -->
-	
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-12">
-					<h1>Tim Tsang</h1><br/>
-					<h3>phone : 13611480619</h3><br/>
-					<h3>QQ : 779280509</h3><br/>
-					<h3>Email : tim_tsang@yeah.net</h3><br/>
-					<h3>University : Guangdong University of Technology</h3><br/>
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/.#headerwrap -->
-	
-
-	<section id="about" name="about"></section>
-	<div id="intro">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5><strong><i>自我评价</i></strong></h5>
-				</div>
-				<div class="col-lg-6"><i>
-				  我叫曾家栩，我来自广东茂名，
-		          <br />
-		          就读于<a href="http://jsjxy.gdut.edu.cn/">广东工业大学计算机学院</a>，
-		          <br />
-		          性格开朗，热爱前端，爱好书法与摄影，爱好篮球运动，
-		          <br />
-		          能吃苦耐劳，严谨，敬业，具有扎实的专业基础，
-		          <br />
-		          有较强的责任心和协作能力及团队合作精神。
-		          <br />
-		          有一定的项目经验，具备较强的沟通能力，
-		          <br />
-		          不畏惧困难, 可以承受较大的工作压力。</i>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #intro -->
-
-
-	<section id="resume" name="resume"></section>
-	<!--EDUCATION DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-				<h4><strong><i>实践经验</i></strong></h4>
-				</div>
-				<div class="col-lg-6">
-					<p><t>广东工业大学TopView工作室WEB前端开发组成员</t><br/>
-						<i>主要职责：WEB前端开发、团队招新、新人培训</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013 / 09 —— 现在</sm><br/>
-					</p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>广东工业大学校党委宣传部校学生新闻中心摄影部部长</t><br/>
-						<i>主要职责：部门内日常事务的管理、校报照片的提供、新人摄影培训</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013 / 06——2014 / 06</sm></p>
-				</div>
-	
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-	
-	
-	<!--WORK DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h4><strong><i>项目经验</i></strong></h4>
-				</div>
-				<div class="col-lg-6">
-					<p><t>海南省海口市公共安全联动指挥系统</t><br/>
-						<i><strong>项目描述：</strong><br/>该系统集成了几大厂商的不同系统：视频监控与会议、网络电话与传真、GPS车辆导航；同时根据国家对应急指挥调度系统的规定，拥有一套应急指挥调度的完善的流程，并结合GIS技术，以地图的方式实现资源的展示与调度。本项目第一版本已上线使用。</i><br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2014/10--目前继续开发中</sm></p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>广东省公安厅Visual links一建式简易应用系统</t><br/>
-						<i><strong>项目描述：</strong><br/>该系统是为广东省公安厅开发，基于大数据处理软件Visual links，在其基础上开发WEB软件，简化复杂操作。该系统的功能主要包括：模型建立、模型读取、综合查询、同行分析、记录保存、数据导入导出，Visual links结果展示。</i><br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2014 / 07—2014 / 09</sm></p>
-				</div>
-
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>广州外国语学校招生报名系统</t><br/>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013 / 05——2014 / 06</sm></p>
-				</div>
-
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>长沙烟草局一卡通集成平台</t><br/>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2014 / 11—2015 / 01</sm></p>
-				</div>
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-
-	<!--AWARDS DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h4><strong><i>获奖情况</i></strong></h4>
-				</div>
-				<div class="col-lg-6">
-					<p><t>2012年“精灵杯”院级辩论赛</t><br/>
-						<i>团体亚军</i> <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2012 / 12</sm></p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>2012~2013年度校级优秀学生</t><br/>
-						<i>二等奖学金</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013 / 02</sm></p>
-				</div>
-
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>第十八届校园文化艺术节之现场书画大赛</t><br/>
-						<i>摄影组二等奖</i><br/>
-						<i>硬笔组优胜奖</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013 / 11</sm></p>
-				</div>
-		
-		</div><!--/.row -->
-		<br>
-	</div><!--/.container -->
-	
-	
-	<!--SKILLS DESCRIPTION -->
-	<div id="skillswrap">
-		<div class="container">
-			<div class="row">
-					<div class="col-lg-2 col-lg-offset-1">
-						<h5><strong><i>职业技能</i></strong></h5>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="javascript" height="130" width="130"></canvas>
-						<p>Javascript</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 60,
-										color:"#1abc9c"
-									},
-									{
-										value : 40,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="extjs" height="130" width="130"></canvas>
-						<p>ExtJS</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 60,
-										color:"#1abc9c"
-									},
-									{
-										value : 40,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("extjs").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="jquery" height="130" width="130"></canvas>
-						<p>JQuery</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 50,
-										color:"#1abc9c"
-									},
-									{
-										value : 50,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("jquery").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					
-					<div class="col-lg-3 col-lg-offset-3 centered">
-						<canvas id="html" height="130" width="130"></canvas>
-						<p>HTML/CSS</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 55,
-										color:"#1abc9c"
-									},
-									{
-										value : 45,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="ajax" height="130" width="130"></canvas>
-						<p>Ajax</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 50,
-										color:"#1abc9c"
-									},
-									{
-										value : 50,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("ajax").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-					<div class="col-lg-3 centered">
-						<canvas id="prezi" height="130" width="130"></canvas>
-						<p>Prezi</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 50,
-										color:"#1abc9c"
-									},
-									{
-										value : 50,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("prezi").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
-
-			</div><!--/.row -->
-			<br>
-		</div><!--/.container -->
-	</div><!--/ #skillswrap -->
-
-
-
-	<section id="work" name="work"></section>
-	<!--PORTFOLIO DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h4><strong><i>项目展示</i></strong></h4>
-				</div>
-				<div class="col-lg-6">
-					<p><img class="img-responsive" src="assets/img/port01.png" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-					<p>海南省海口市公共安全联动指挥系统主系统模块</p>
-				<p><more><i>在这个主模块里我主要是配合后台对项目中涉及到密码部分进行RSA加密，配合后台实现系统中的用户管理以及权限管理模块，帮助其他队员进行其他前端页面的开发以及部分页面的调试。</i><br/><br/>
-					<sm><i class="icon-tag"></i> front-end</sm></more> 
-				</p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port02.png" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>海南省海口市公共安全联动指挥系统Arcgis地图模块</p>
-					<p><more><i>在这个模块里我主要是学习部分arcgis for js技术（足够项目使用），实现前端ExtJS与Arcgis地图之间的数据对接，调用地图组件实现对Arcgis地图的操作，在Arcgis地图上视频、电话与后台之间的数据对接以及现场调试，配合后台实现在Arcgis地图上进行资源显示以及资源调度。</i><br/><br/>
-						<sm><i class="icon-tag"></i> front-end</sm></more> 
-					</p>
-				</div>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port03.png" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>广东省公安厅Visual links一建式简易应用系统</p>
-					<p><more><i>在这个系统中我是整个前端界面的负责人，用ExtJS搭建整个前端界面框架，与后台进行数据交互，配合后台实现对数据的各种异步操作。</i><br/><br/>
-						<sm><i class="icon-tag"></i> front-end</sm></more> 
-					</p>
-				</div>
-
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port04.png" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>广州外国语学校招生报名系统</p>
-					<p><more><i>在这个系统中我主要负责主页的设计以及代码实现</i><br/><br/>
-						<sm><i class="icon-tag"></i> web design and front-end</sm></more> 
-					</p>
-				</div>
-		
-		</div><!--/.row -->
-	</div><!--/.container -->
-	
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h4><strong><i>摄影作品展示</i></strong></h4>
-				</div>
-				<div class="col-lg-6">
-					<p><img class="img-responsive" src="assets/img/port05.jpg" alt=""></p>
-				</div>
-					<sm><i class="icon-tag"></i> <i>该照片摄于广东工业大学正门</i></sm></more> 
-				</p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port06.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<sm><i class="icon-tag"></i> <i>该照片摄于广东工业大学西二721宿舍</i></sm></more> 
-					</p>
-				</div>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port07.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<sm><i class="icon-tag"></i> <i>该照片摄于某个早上太阳刚升起的时候</i></sm></more> 
-					</p>
-				</div>
-
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port08.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<sm><i class="icon-tag"></i> <i>该照片摄于广东工业大学西二721宿舍</i></sm></more> 
-					</p>
-				</div>
-		
-		</div><!--/.row -->
-		<br>
-		<br>
-	</div><!--/.container -->
-
-
-	<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
-	<div id="footwrap">
-		<div class="container">
-			<div class="row">
-			
-				<div class="col-lg-2 col-lg-offset-1">
-					<h4><strong><i>联系方式</i></strong></h4>
-				</div>
-				<div class="col-lg-6">
-					<p><t>Phone</t><br/>
-						13611480619 <br/>
-					</p>
-					<p><t>Email</t><br/>
-						tim_tsang@yeah.net <br/>
-					</p>
-					<p><t>QQ</t><br/>
-						7789280509 <br/>
-					</p>
-					<p><t>Adress</t><br/>
-						广州大学城广东工业大学西区二栋721宿舍
-					</p>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
-	
-	<div id="c">
-		<div class="container">
-		
-		</div>
-	</div>
-	
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
-  </body>
+<!--the content-->
+<div class="container" id="top">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-12">
+      <div class="jumbotron" id="about">
+        <h1>我是谁？</h1>
+        <p><i class="icon-user"></i>我是一个稍微带有点伪文艺气息的工科男，因为我喜欢书法，我喜欢摄影，我喜欢看书......同时也爱编程，爱思考......我很喜欢一些好的设计，惊叹设计者的想法。我喜欢发现美，捕捉美，所以我爱摄影；我喜欢创造美，所以爱书法；我喜欢思考，所以爱编程。我喜欢前端，因为我觉得做前端是艺术与工程的完美结合，每一个前端界面都充满着设计师的艺术想法，同时也充满着工程师的逻辑思考。</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-lg-9">
+          <div class="jumbotron" id="photograph">
+            <h1>我的摄影作品</h1>
+            <h3>组图《忆•旧》</h3>
+            <br/>
+            <em><i class="icon-bookmark"></i>古语云：“物是人非事事休，欲语泪先流。”烟华易逝的往事，记忆斐然的画卷，过去的日子都如梦般在我们的脑海中若隐若现。总有一些事物会勾起我们对这些往事的怀念。</em><br/>
+            <br/>
+            <img src="img/oldPhoto1.jpg"/><br/>
+            <br/>
+            <i><i class="icon-book"></i>往事终成空，昨日的岁月都会成为过去，最终只能成为回忆，过去的每一秒都已经是过去。旧的回忆只能永远珍藏在我们的心底里，当前才是最重要的，珍惜现在，才能拥有更美好的回忆。</i><br/>
+            <br/>
+            <p><a class="btn btn-default" href="photograph.html" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+          </div>
+        </div>
+        <!--/.col-xs-12.col-lg-9-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《忆旧之钨丝灯》</i><br/>
+          <br/>
+          <img src="img/oldPhoto2.jpg"/><br/>
+          <br/>
+          <i><i class="icon-book"></i>岁月无声暗流，时间在流逝，灯泡也在变化，过去的钨丝灯已经渐渐退出人们生活的舞台。</i><br/>
+          <br/>
+          <p><a class="btn btn-default" href="photograph.html#oldPhoto2" role="button"><i>点击查看大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《忆旧之书法》</i><br/>
+          <br/>
+          <img src="img/oldPhoto4.jpg"/><br/>
+          <br/>
+          <i><i class="icon-book"></i>依稀记得小的时候很喜欢书法，有时间就会拿起毛笔写字，每当心情不好时就想写字，每当拿起毛笔的时候，心情就会马上平静下来，顿时，心如止水，一切不好的心情都会烟消云散。</i> <br/>
+          <br/>
+          <p><a class="btn btn-default" href="photograph.html#oldPhoto4" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        
+        <div class="col-xs-12 col-lg-9">
+          <div class="jumbotron" id="project">
+            <h1>我所做过的项目</h1>
+            <h3>广州外国语学校招生报名系统</h3>
+            <br/>
+            <img src="img/registration.png"/><br/>
+            <br/>
+            <i><i class="icon-book"></i>该系统是为广州外国语学校小升初报名使用的系统，提供小升初报名、审核等功能。</i><br/>
+            <br/>
+            <p><a class="btn btn-default" href="project.html#registration" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+          </div>
+        </div>
+        <!--/.col-xs-12.col-lg-9-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>海口市公共安全联动指挥系统</i><br/>
+          <br/>
+          <img src="img/haiNan1.png"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="project.html#haiNan" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>Visual links一建式简易应用系统</i><br/>
+          <br/>
+          <img src="img/VL1.png"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="project.html#VL" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        
+        <div class="col-xs-12 col-lg-9">
+          <div class="jumbotron" id="calligraphy">
+            <h1>我的书法作品</h1>
+            <h3>《天道酬勤》</h3>
+            <br/>
+            <em><i class="icon-bookmark"></i>古语云：“天道酬勤,厚德载物”多一分耕耘，多一分收获，只要付出了足够的努力，将来也一定会得到相应的回报。</em><br/>
+            <br/>
+            <img src="img/calligraphy1.jpg"/><br/>
+            <br/>
+            <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+          </div>
+        </div>
+        <!--/.col-xs-12.col-lg-9-->
+        
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《兰亭序》</i><br/>
+          <br/>
+          <img src="img/calligraphy3.jpg"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《随笔练习》</i><br/>
+          <br/>
+          <img src="img/calligraphy2.jpg"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《淡泊明志，宁静致远》</i><br/>
+          <br/>
+          <img src="img/calligraphy4.jpg"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3--> 
+      </div>
+      <!--/row--> 
+    </div>
+    <!--/.col-xs-12.col-sm-9--> 
+  </div>
+  <!--/row-->
+  
+  <hr>
+  <section id="contact" name="contact"></section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h4><strong><i>联系方式</i></strong></h4>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            <t>Phone</t>
+            <br/>
+            13611480619 <br/>
+          </p>
+          <p>
+            <t>Email</t>
+            <br/>
+            tim_tsang@yeah.net <br/>
+          </p>
+          <p>
+            <t>QQ</t>
+            <br/>
+            7789280509 <br/>
+          </p>
+          <p>
+            <t>Adress</t>
+            <br/>
+            广州大学城广东工业大学西区二栋721宿舍 </p>
+        </div>
+      </div>
+      <!--/.row --> 
+    </div>
+    <!--/.container --> 
+  </footer>
+  <div id="c">
+    <div class="container">
+      <div class="col-xs-6 col-lg-6">
+        <div class="backToTop" ><a class="backToTopText smoothScroll" href="#top"><br>返回顶部</a></div>
+        <p class="pull-left">&copy; 2015 TimTsang </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/.container--> 
+<script src="js/jquery-1.11.1.js"></script> 
+<script src="js/smoothscroll.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>

@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* 简单流媒体
+   注意: 流媒体要求您删除 HTML 中媒体的高度和宽度属性
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支持最大宽度，因此默认为 100% 宽度 */
+.ie6 img {
+	width: 100%;
+}
+/*---------------------------------------------------
+	一些默认样式
+---------------------------------------------------*/
+body {
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway";
+	font-weight: 300;
+	color: #333;
+}
+/* Paragraph & Typographic */
+p {
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+.centered {
+	text-align: center;
+}
+/* Links */
+a {
+	word-wrap: break-word;
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+a:hover, a:focus {
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
+}
+a:before, a:after {
+	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+/* 移动设备布局: 480px 及更低。 */
+/*---------------------------------------------------
+	顶部
+---------------------------------------------------*/
+#navbar a {
+	color: #fff;
+}
+#navbar i {
+	font-size: 25px;
+}
+#navbar ul#nav {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border-right: 1px solid #222;
+	/* For IE, the outcast */
+	zoom: 1;
+ *display: inline;
+}
+#navbar ul#nav > li {
+	display: block;
+	float: left;
+	padding: 0;
+}
+#navbar ul#nav a {
+	display: block;
+	text-decoration: none;
+	padding: 16px 20px 18px 20px;
+	border-left: 1px solid #222;
+}
+#navbar ul#nav a:hover {
+	background: #EEEEEE;
+	text-decoration: none;
+	border-left: 1px solid #111;
+}
+#navbar ul#nav a:active {
+	background: #FFFFFF;
+	border-left: 1px solid #111;
+}
+#navbar ul#nav .active a:hover {
+	background: #44bbaa;
+}
+/*---------------------------------------------------
+	头部
+---------------------------------------------------*/
+#headerwrap {
+	background: url(../img/header-bg.jpg) no-repeat center top;
+	padding-top: 140px;
+	margin-bottom: 50px;
+	background-position: center center;
+	min-height: 800px;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#headerwrap h1 {
+	font-size: 80px;
+	color: white;
+}
+#headerwrap h3 {
+	font-size: 20px;
+	color: white;
+}
+/*---------------------------------------------------
+	底部
+---------------------------------------------------*/
+.backToTop {
+	z-index: 10;
+	float: right;
+	width: 48px;
+	height: 48px;
+	margin: 0 auto;
+	background: no-repeat url("../img/backToTop.png");
+	-webkit-background-size: 40px 40px;
+	-moz-background-size: 40px 40px;
+	background-size: 40px 40px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	border: 4px solid;
+	border-color: #337AB7;
+	-webkit-transition: -webkit-transform 1s ease-in-out;
+	-moz-transition: -moz-transform 0.5s ease-in-out;
+	-ms-transition: -ms-transform 0.5s ease-in-out;
+	-o-transition: -o-transform 0.5s ease-in-out;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	cursor: pointer;
+	
+	transition-property : z-index: 10;
+	transition-duration: 0s;
+	transition-timing-function: linear;
+	transition-delay: 0s;
+}
+
+.backToTopText:hover {
+	opacity: 1;
+}
+
+.backToTop:hover{
+	z-index: 11;
+}
+
+.backToTopText {
+	color: #337AB7;
+	z-index: 10;
+	float: right;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	width: 100px;
+	cursor: pointer;
+	opacity: 0;
+	text-shadow: 5px 5px 5px GREY;
+	text-align: right;
+	
+	transition-property : right, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+	transition-delay: 0s;
+}
+
+footer {
+	background: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+footer p {
+	color: white;
+}
+footer h5 {
+	color: white;
+}
+footer t {
+	font-weight: 700;
+}
+footer i {
+	padding-right: 8px;
+	color: #9D9D9D;
+}
+/*---------------------------------------------------
+	底边栏
+---------------------------------------------------*/
+#c {
+	background: #222222;
+	padding-top: 15px;
+	text-align: right;
+}
+#c p {
+	color: white
+}
+
+/* 平板电脑布局: 481px 至 768px。样式继承自: 移动设备布局。 */
+
+@media only screen and (min-width: 481px) {
+}
+
+/* 桌面电脑布局: 769px 至最高 1232px。样式继承自: 移动设备布局和平板电脑布局。 */
+
+@media only screen and (min-width: 769px) {
+}

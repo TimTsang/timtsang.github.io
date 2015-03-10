@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* 移动设备布局: 480px 及更低。 */
+/*---------------------------------------------------
+	顶部
+---------------------------------------------------*/
+#sidebar ul#navSidebar a:hover {
+	background: #222222;
+	text-decoration: none;
+	border-left: 1px solid #111;
+}
+#sidebar ul#navSidebar .active a {
+	background: #222222;
+	border-left: 1px solid #111;
+}
+#sidebar ul#navSidebar .active a:hover {
+	background: #44bbaa;
+}
+/*---------------------------------------------------
+	头部
+---------------------------------------------------*/
+
+
+/* 平板电脑布局: 481px 至 768px。样式继承自: 移动设备布局。 */
+
+@media only screen and (min-width: 481px) {
+}
+
+/* 桌面电脑布局: 769px 至最高 1232px。样式继承自: 移动设备布局和平板电脑布局。 */
+
+@media only screen and (min-width: 769px) {
+}
