@@ -15,12 +15,14 @@
 <title>GDUT TimTsang -- 我的摄影作品</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 <link href="css/dashboard.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/photograph.css" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script src="js/jquery-1.11.1.js"></script>
 <script src="js/respond.min.js"></script>
 </head>
 <body data-spy="scroll" data-offset="0" data-target="#nav">
@@ -151,8 +153,13 @@
 </div>
 </div>
 <!--/.container--> 
-<script src="js/jquery-1.11.1.js"></script> 
 <script src="js/smoothscroll.js"></script> 
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+// For Demo purposes only (show hover effect on mobile devices)
+[].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+  el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+} );
+</script>
 </body>
 </html>

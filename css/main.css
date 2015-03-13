@@ -1,15 +1,14 @@
 @charset "utf-8";
-/* 简单流媒体
-   注意: 流媒体要求您删除 HTML 中媒体的高度和宽度属性
-   http://www.alistapart.com/articles/fluid-images/ 
-*/
+
 img, object, embed, video {
 	max-width: 100%;
 }
+
 /* IE 6 不支持最大宽度，因此默认为 100% 宽度 */
 .ie6 img {
 	width: 100%;
 }
+
 /*---------------------------------------------------
 	一些默认样式
 ---------------------------------------------------*/
@@ -26,13 +25,13 @@ body {
 	-webkit-box-shadow:inset 0 0 30px #000000;
 	box-shadow: inset 0 0 30px #000000;
 }
-/* Titles */
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Raleway";
 	font-weight: 300;
 	color: #333;
 }
-/* Paragraph & Typographic */
+
 p {
 	line-height: 28px;
 	margin-bottom: 25px;
@@ -40,7 +39,7 @@ p {
 .centered {
 	text-align: center;
 }
-/* Links */
+
 a {
 	word-wrap: break-word;
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -49,11 +48,13 @@ a {
 	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
 	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
+
 a:hover, a:focus {
 	color: #7b7b7b;
 	text-decoration: none;
 	outline: 0;
 }
+
 a:before, a:after {
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -61,6 +62,7 @@ a:before, a:after {
 	-o-transition: color 0.1s ease-in, background 0.1s ease-in;
 	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
+
 hr {
 	display: block;
 	height: 1px;
@@ -69,7 +71,23 @@ hr {
 	margin: 1em 0;
 	padding: 0;
 }
-/* 移动设备布局: 480px 及更低。 */
+
+.container img{
+	cursor:pointer;
+	/*添加外阴影*/
+	-ms-box-shadow: 4px 4px 4px #000;
+	-moz-box-shadow: 4px 4px 4px #000;
+	-webkit-box-shadow: 4px 4px 4px #000;
+	box-shadow:  4px 4px 4px #000;
+}
+
+.jumbotron{
+	-ms-box-shadow: 4px 4px 4px #555555;
+	-moz-box-shadow: 4px 4px 4px #555555;
+	-webkit-box-shadow: 4px 4px 4px #555555;
+	box-shadow:  4px 4px 4px #555555;
+}
+
 /*---------------------------------------------------
 	顶部
 ---------------------------------------------------*/
@@ -111,6 +129,7 @@ hr {
 #navbar ul#nav .active a:hover {
 	background: #44bbaa;
 }
+
 /*---------------------------------------------------
 	头部
 ---------------------------------------------------*/
@@ -137,6 +156,154 @@ hr {
 	font-size: 20px;
 	color: white;
 }
+
+
+.main img{
+	cursor:pointer;
+	/*添加外阴影*/
+	-ms-box-shadow: 4px 4px 4px #000;
+	-moz-box-shadow: 4px 4px 4px #000;
+	-webkit-box-shadow: 4px 4px 4px #000;
+	box-shadow:  4px 4px 4px #000;
+}
+
+/*css3图片动画效果*/
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p em{
+	color: black;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/*bigPhoto*/
+figure.effect-bigPhoto img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 20px);
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-bigPhoto figcaption {
+	text-align: left;
+}
+
+figure.effect-bigPhoto figcaption > div {
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-bigPhoto h2,
+figure.effect-bigPhoto p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-bigPhoto h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-bigPhoto p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-bigPhoto:hover img{
+	opacity: 0.7;
+}
+
+figure.effect-bigPhoto:hover p {
+	opacity: 1;
+}
+
+figure.effect-bigPhoto:hover img,
+figure.effect-bigPhoto:hover h2,
+figure.effect-bigPhoto:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-bigPhoto:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+
 /*---------------------------------------------------
 	底部
 ---------------------------------------------------*/
@@ -199,6 +366,12 @@ footer {
 	background: #2f2f2f;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	border-radius: 6px 6px 0 0;
+	/*添加外阴影*/
+	-ms-box-shadow: 4px 4px 4px #555555;
+	-moz-box-shadow: 4px 4px 4px #555555;
+	-webkit-box-shadow: 4px 4px 4px #555555;
+	box-shadow:  4px 4px 4px #555555;
 }
 footer p {
 	color: white;
@@ -213,6 +386,7 @@ footer i {
 	padding-right: 8px;
 	color: #9D9D9D;
 }
+
 /*---------------------------------------------------
 	底边栏
 ---------------------------------------------------*/
@@ -220,17 +394,12 @@ footer i {
 	background: #222222;
 	padding-top: 15px;
 	text-align: right;
+	/*添加外阴影*/
+	-ms-box-shadow: 4px 4px 4px #555555;
+	-moz-box-shadow: 4px 4px 4px #555555;
+	-webkit-box-shadow: 4px 4px 4px #555555;
+	box-shadow:  4px 4px 4px #555555;
 }
 #c p {
 	color: white
-}
-
-/* 平板电脑布局: 481px 至 768px。样式继承自: 移动设备布局。 */
-
-@media only screen and (min-width: 481px) {
-}
-
-/* 桌面电脑布局: 769px 至最高 1232px。样式继承自: 移动设备布局和平板电脑布局。 */
-
-@media only screen and (min-width: 769px) {
 }
