@@ -173,6 +173,7 @@ hr {
 	margin: 0 auto;
 	padding: 1em 0 4em;
 	max-width: 1000px;
+	max-height: 500px;
 	list-style: none;
 	text-align: center;
 }
