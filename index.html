@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>给谢小紫老师的玫瑰花</title>
+<title>给谢小紫老师的3D玫瑰花</title>
 <meta charset="utf-8">
 </head>
 <body>
@@ -23,14 +23,160 @@
 
             display: table;
     }
+    #container{
+            width: 80%;
+            height: 600px;
+            border: 2px solid red;
+            background: #000;
+            margin:20px auto;
+            cursor: pointer;
+            position: relative;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+        }
+        .fire{
+            width: 10px;
+            height:10px;
+            position: absolute;
+            bottom: 0;
+        }
+        .small-fire{
+            width: 10px;
+            height:10px;
+            position: absolute;
+            border-radius: 50%;
+        }
 </style>
-<h1 class="titleH1">给谢小紫老师的玫瑰花</h1>
+<h1 class="titleH1">给谢小紫老师的玫瑰花~呐~~</h1>
 <canvas id="c"></canvas>
+<div id="container"></div>
 <script>
     var b = document.body;
     var c = document.getElementsByTagName('canvas')[0];
     var a = c.getContext('2d');
     document.body.clientWidth;
+
+    //移动
+function move(ele,json,callback){
+    clearInterval(ele.t);
+    ele.t = setInterval(() => {
+        var onoff = true;
+        for(var i in json){
+            var iNow = parseInt(getStyle(ele,i));
+            var speed = (json[i] - iNow)/6;
+            speed = speed<0 ? Math.floor(speed) : Math.ceil(speed);
+            if(iNow != json[i]){
+                onoff = false;
+            }
+            ele.style[i] = iNow + speed + "px";
+        }
+        if(onoff){
+            clearInterval(ele.t);
+            callback && callback();
+        }
+    }, 30);
+}
+function getStyle(ele,attr){
+    if(ele.currentStyle){
+        return ele.currentStyle[attr];
+    }else{
+        return getComputedStyle(ele,false)[attr];
+    }
+}
+
+    function Fire(options){
+        this.x = options.x;
+        this.y = options.y;
+        this.cont = options.parent;
+
+        // 1.创建主体烟花，设置样式，位置
+        this.init()
+    }
+    Fire.prototype.init = function(){
+        // 主体烟花，设置样式，位置
+        this.ele = document.createElement("div");
+        this.ele.className = "fire";
+        this.ele.style.left = this.x + "px";
+        this.ele.style.background = randomColor();
+        this.cont.appendChild(this.ele)
+
+        // 2.开始运动，运动结束
+        this.animate()
+    }
+    Fire.prototype.animate = function(){
+        // 开始运动。。。
+        move(this.ele,{
+            top:this.y
+        },function(){
+            // 删除主体烟花
+            this.ele.remove()
+            // 3.创建小烟花
+            this.createSmall()
+        }.bind(this))
+    }
+    Fire.prototype.createSmall = function(){
+        // 创建小烟花,运动，删掉
+        var num = random(10,20);
+
+        // 1.随机的半径
+        var r = random(100,200);
+        console.log(num)
+        for(var i=0;i<num;i++){
+            let div = document.createElement("div");
+            div.className = "small-fire";
+            div.style.background = randomColor();
+            div.style.left = this.x + "px";
+            div.style.top = this.y + "px";
+            div.setAttribute("i",i);
+            this.cont.appendChild(div);
+
+            // 2.利用三角函数，计算出一个圆上面平均分布的点的坐标
+            // 注意三角函数的方法接收的是弧度：别忘记角度转弧度
+            var l = parseInt(Math.cos( Math.PI/180 * (360/num * i)) * r) + this.x;
+            var t = parseInt(Math.sin( Math.PI/180 * (360/num * i)) * r) + this.y;
+
+            move(div,{
+                left:l,
+                top:t
+            },function(){
+                div.remove()
+            })
+            
+        }
+    }
+
+
+
+    // for(){
+    //     ali[i] = i
+    //     ali[i].onclick = function(){
+    //         this
+    //     }
+    // }
+
+
+
+// 范围随机数
+function random(max,min){
+    return Math.round(Math.random()*(max-min)+min);
+}
+
+// 随机颜色
+function randomColor(){
+    return "rgb("+random(0,255)+","+random(0,255)+","+random(0,255)+")";
+}
+
+
+    var ocont = document.getElementById("container");
+    ocont.onclick = function(eve){
+        var e = eve || window.event;
+        new Fire({
+            x:e.offsetX,
+            y:e.offsetY,
+            parent:this
+        });
+    }
 </script>
 <script>
 // start of submission //
