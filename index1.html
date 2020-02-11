@@ -1,21 +1,240 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
 <head>
-<title>3D玫瑰花</title>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="世界上最恐怖的事是，比你优秀的人比你还努力。">
+<meta name="author" content="TimTsang">
+<meta name="keywords" content="TimTsang,曾家栩,个人主页,zengjiaxu,GDUT" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<title>GDUT TimTsang -- 个人主页</title> 
+<script src="js/jquery-1.11.1.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
-<body>
-<canvas id="c" height="500" width="500"></canvas>
-<script>
-    var b = document.body;
-    var c = document.getElementsByTagName('canvas')[0];
-    var a = c.getContext('2d');
-    document.body.clientWidth;
-</script>
-<script>
-// start of submission //
-with(m=Math)C=cos,S=sin,P=pow,R=random;c.width=c.height=f=500;h=-250;function p(a,b,c){if(c>60)return[S(a*7)*(13+5/(.2+P(b*4,4)))-S(b)*50,b*f+50,625+C(a*7)*(13+5/(.2+P(b*4,4)))+b*400,a*1-b/2,a];A=a*2-1;B=b*2-1;if(A*A+B*B<1){if(c>37){n=(j=c&1)?6:4;o=.5/(a+.01)+C(b*125)*3-a*300;w=b*h;return[o*C(n)+w*S(n)+j*610-390,o*S(n)-w*C(n)+550-j*350,1180+C(B+A)*99-j*300,.4-a*.1+P(1-B*B,-h*6)*.15-a*b*.4+C(a+b)/5+P(C((o*(a+1)+(B>0?w:-w))/25),30)*.1*(1-B*B),o/1e3+.7-o*w*3e-6]}if(c>32){c=c*1.16-.15;o=a*45-20;w=b*b*h;z=o*S(c)+w*C(c)+620;return[o*C(c)-w*S(c),28+C(B*.5)*99-b*b*b*60-z/2-h,z,(b*b*.3+P((1-(A*A)),7)*.15+.3)*b,b*.7]}o=A*(2-b)*(80-c*2);w=99-C(A)*120-C(b)*(-h-c*4.9)+C(P(1-b,7))*50+c*2;z=o*S(c)+w*C(c)+700;return[o*C(c)-w*S(c),B*99-C(P(b, 7))*50-c/3-z/1.35+450,z,(1-b/1.2)*.9+a*.1, P((1-b),20)/4+.05]}}setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}',0)
-// end of submission //
-</script>
+<body data-spy="scroll" data-offset="0" data-target="#nav">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">TimTsang</a> </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul id="nav" class="nav navbar-nav">
+        <li class="menu-item"><a class="smoothScroll" href="#about" title="关于我"><i class="icon-user"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#photograph" title="我的摄影作品"><i class="icon-camera"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#project" title="我所做过的项目"><i class="icon-briefcase"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#calligraphy" title="我的书法作品"><i class="icon-file"></i></a></li>
+        <li class="menu-item"><a class="smoothScroll" href="#contact" title="联系我吧"><i class="icon-envelope"></i></a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+<div id="headerwrap">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-12">
+        <h1>Tim Tsang</h1>
+        <br/>
+        <h3>phone : 13611480619</h3>
+        <br/>
+        <h3>QQ : 779280509</h3>
+        <br/>
+        <h3>Email : tim_tsang@yeah.net</h3>
+        <br/>
+        <h3>University : Guangdong University of Technology</h3>
+        <br/>
+      </div>
+      <!--/.col-lg-12 --> 
+    </div>
+    <!--/.row --> 
+  </div>
+  <!--/.container --> 
+</div>
+<!--/.#headerwrap --> 
+
+<!--the content-->
+<div class="container" id="top">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-12">
+      <div class="jumbotron" id="about">
+        <h1>我是谁？</h1>
+        <p><i class="icon-user"></i>我是一个稍微带有点伪文艺气息的工科男，因为我爱好很广泛，我喜欢书法，我喜欢摄影，我喜欢看书，爱好思考......同样我也喜欢大多数工科男所喜好的篮球运动。我喜欢发现美，捕捉美，所以我爱摄影；我喜欢创造美，所以爱书法。我觉得前端是艺术与工程的完美结合，每一个前端界面都充满着设计师的艺术想法，同时也充满着工程师的逻辑思考，整个产品下来恰恰也就是他们的最好的体现。</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-lg-9">
+          <div class="jumbotron" id="photograph">
+            <h1>我的摄影作品</h1>
+            <h3>组图《忆•旧》</h3>
+            <br/>
+            <big><i class="icon-bookmark"></i>古语云：“物是人非事事休，欲语泪先流。”，烟华易逝的往事，记忆斐然的画卷，过去的日子都如梦般在我们的脑海中若隐若现。总有一些事物会勾起我们对这些往事的怀念。</big><br/><br/>
+            <div class="grid">
+              <figure class="effect-bigPhoto">
+                <img src="img/oldPhoto1.jpg"/><br/><br/>
+                <figcaption>
+                  <div>
+                    <p><small><i class="icon-book"></i>往事终成空，昨日的岁月都会成为过去，最终只能成为回忆，过去的每一秒都已经是过去。旧的回忆只能永远珍藏在我们的心底里，当前才是最重要的，珍惜现在，才能拥有更美好的回忆。</small></p>
+                  </div>
+                </figcaption>     
+              </figure>
+            </div>
+            <p><a class="btn btn-default" href="photograph.html" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+          </div>
+        </div>
+        <!--/.col-xs-12.col-lg-9-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《忆旧之钨丝灯》</i><br/>
+          <br/>
+          <img src="img/oldPhoto2.jpg" class="smallPhoto" /><br/>
+          <br/>
+          <i><i class="icon-book"></i>岁月无声暗流，时间在流逝，灯泡也在变化，过去的钨丝灯已经渐渐退出人们生活的舞台。</i><br/>
+          <br/>
+          <p><a class="btn btn-default" href="photograph.html#oldPhoto2" role="button"><i>点击查看大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《忆旧之书法》</i><br/>
+          <br/>
+          <img src="img/oldPhoto4.jpg" class="smallPhoto"/><br/>
+          <br/>
+          <i><i class="icon-book"></i>依稀记得小的时候很喜欢书法，有时间就会拿起毛笔写字，每当心情不好时就想写字，每当拿起毛笔的时候，心情就会马上平静下来，顿时，心如止水，一切不好的心情都会烟消云散。</i> <br/>
+          <br/>
+          <p><a class="btn btn-default" href="photograph.html#oldPhoto4" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        
+        <div class="col-xs-12 col-lg-9">
+          <div class="jumbotron" id="project">
+            <h1>我所做过的项目</h1>
+            <h3>广州外国语学校招生报名系统</h3>
+            <div class="grid">
+              <figure class="effect-bigPhoto">
+                <img src="img/registration.png"/><br/><br/>
+                <figcaption>
+                  <div>
+                    <p><small><i class="icon-book"></i>该系统是为广州外国语学校小升初报名使用的系统，提供小升初报名、审核等功能。</small></p>
+                  </div>
+                </figcaption>     
+              </figure>
+            </div>
+            <p><a class="btn btn-default" href="project.html#registration" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+          </div>
+        </div>
+        <!--/.col-xs-12.col-lg-9-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>海口市公共安全联动指挥系统</i><br/>
+          <br/>
+          <img src="img/haiNan1.png" class="smallPhoto"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="project.html#haiNan" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>Visual links一建式简易应用系统</i><br/>
+          <br/>
+          <img src="img/VL1.png" class="smallPhoto"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="project.html#VL" role="button"><i>点击查看更多吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        
+        <div class="col-xs-12 col-lg-9">
+          <div class="jumbotron" id="calligraphy">
+            <h1>我的书法作品</h1>
+            <h3>《天道酬勤》</h3>
+            <div class="grid">
+              <figure class="effect-bigPhoto">
+                <img src="img/calligraphy1.jpg"/><br/><br/>
+                <figcaption>
+                  <div>
+                    <p><small><i class="icon-book"></i>古语云：“天道酬勤,厚德载物。”，多一分耕耘，多一分收获，只要付出了足够的努力，将来也一定会得到相应的回报。</small></p>
+                  </div>
+                </figcaption>     
+              </figure>
+            </div>
+            <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+          </div>
+        </div>
+        <!--/.col-xs-12.col-lg-9-->
+        
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《兰亭序》</i><br/>
+          <br/>
+          <img src="img/calligraphy3.jpg" class="smallPhoto"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《随笔练习》</i><br/>
+          <br/>
+          <img src="img/calligraphy2.jpg" class="smallPhoto"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3-->
+        <div class="col-xs-12 col-lg-3"> <i><i class="icon-bookmark"></i>《淡泊明志，宁静致远》</i><br/>
+          <br/>
+          <img src="img/calligraphy4.jpg" class="smallPhoto"/><br/>
+          <br/>
+          <p><a class="btn btn-default" href="#" role="button"><i>点击查大图吧 &raquo;</i></a></p>
+        </div>
+        <!--/.col-xs-12.col-lg-3--> 
+      </div>
+      <!--/row--> 
+    </div>
+    <!--/.col-xs-12.col-sm-9--> 
+  </div>
+  <!--/row-->
+  
+  <hr>
+  <section id="contact" name="contact"></section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+          <h4><strong><i>联系方式</i></strong></h4>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            <t>Phone</t>
+            <br/>
+            13611480619 <br/>
+          </p>
+          <p>
+            <t>Email</t>
+            <br/>
+            tim_tsang@yeah.net <br/>
+          </p>
+          <p>
+            <t>QQ</t>
+            <br/>
+            7789280509 <br/>
+          </p>
+          <p>
+            <t>Adress</t>
+            <br/>
+            广州大学城广东工业大学 </p>
+        </div>
+      </div>
+      <!--/.row --> 
+    </div>
+    <!--/.container --> 
+  </footer>
+  <div id="c">
+    <div class="container">
+      <div class="col-xs-6 col-lg-6">
+        <div class="backToTop" ><a class="backToTopText smoothScroll" href="#top"><br>返回顶部</a></div>
+        <p class="pull-left">&copy; 2015 TimTsang </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/.container--> 
 </body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
 </html>
