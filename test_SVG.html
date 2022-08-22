@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://dev.xingway.com/experiments/wechat/svg/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+  <title>SVG Animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box!important;
+      word-wrap: break-word!important;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      padding: 0 15px;
+      font-family: 'Microsoft Yahei', 'helvetica neue', helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <section style="margin:0px auto;max-width:360px;text-align:center;overflow:hidden;">
+    <div style="height:0px">
+      <svg style="margin-top:158.75%;background-color:rgb(0, 0, 0);width:100%;"></svg>
+      <svg viewBox="0 0 1080 620" xmlns="http://www.w3.org/2000/svg" style="background-image: url(img/1.jpeg);background-color:rgb(29, 28, 31);background-size: contain;background-position:center top;background-repeat: no-repeat;width:100%;height:658px;margin-top:-9px;"></svg>
+    </div>
+
+    <div style="height:0px">
+      <svg style="transform:rotateZ(0deg);background-color:transparent;background-size:100% auto;background-repeat: no-repeat;width:100%;height:620px;" version="1.1" viewBox="0 0 1080 620" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg">
+        <animate attributeName="height" begin="click+3.5s" restart="never" dur="0.01s" from="620" to="0" fill="freeze"></animate>
+        <animate attributeName="opacity" begin="click+3.5s" restart="never" dur="0.02s" from="1" to="0" fill="freeze"></animate>
+        <g>
+          <animatetransform attributeName="transform" type="translate" fill="freeze" calcMode="discrete" restart="never" keyTimes="0;0.000001;1" values="0 0;-1080 0;-1080 0" dur="1200s" begin="click"></animatetransform>
+          <g>
+            <foreignobject x="0" y="0" width="1080" height="1950">
+              <svg style="background-image:url(img/bg.jpeg);background-size:100% auto;background-repeat:no-repeat;width:100%;height:100%;"></svg>
+            </foreignobject>
+            <foreignobject x="0" y="0" width="1080" height="1950" transform="translate(1080, 0)">
+              <svg xmlns="http://www.w3.org/2000/svg" style="background-image:url(img/1.gif);background-size:100% auto;background-repeat:no-repeat;width:100%;height:100%;">
+              </svg>
+            </foreignobject>
+            <g>
+              <animate attributeName="opacity" begin="0s" dur="1s" values="1;0;1" repeatCount="indefinite"></animate>
+              <text x="340" y="1770" fill="#fff" style="font-size:36px">&gt;点一下屏幕，有请主角&lt;</text>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <div style="height:0px">
+      <svg viewBox="0 0 1080 620" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" style="background-color:#fefefe;background-size:100% auto;width:100%;height:620px" width="100%" height="620px">
+        <animate attributeName="opacity" begin="click" restart="never" dur="0.02s" from="1" to="0" fill="freeze"></animate>
+        <animate attributeName="height" begin="click+0.1s" restart="never" dur="0.01s" from="620" to="0" fill="freeze"></animate>
+        <foreignobject x="0" y="0" width="1080" height="1950">
+          <svg width="1080" height="1950" xmlns="http://www.w3.org/2000/svg" style="background-image:url(img/2bg.jpeg);background-repeat:no-repeat;background-size:100% auto;width:100%;height:100%">
+          </svg>
+        </foreignobject>
+        <g>
+          <animate attributeName="opacity" begin="0s" dur="1s" values="1;0;1" repeatCount="indefinite"></animate>
+          <text x="340" y="1800" fill="#000" style="font-size:36px">&gt;点一下，看看它有多强&lt;</text>
+        </g>
+      </svg>
+    </div>
+    
+    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 1080 620" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:616px;">
+      <animate attributeName="height" fill="freeze" restart="never" calcMode="spline" keySplines="0.42 0 0.58 1.0; 0.42 0 0.58 1.0" keyTimes="0;0.002;1" values="620;1350;1350" dur="1200s" begin="click+1s"></animate>
+      <g>
+        <animatetransform attributeName="transform" type="translate" fill="freeze" calcMode="discrete" restart="never" keyTimes="0;0.000001;1" values="0 0;-1080 0;-1080 0" dur="1200s" begin="click"></animatetransform>
+        <g>
+          <rect width="1080" height="1350" style="fill:transparent;"></rect>
+          <rect width="1080" height="1350" transform="translate(1080, 0)" style="fill:#000;"></rect>
+          <foreignobject x="0" y="0" width="1080" height="1950" transform="translate(1080, 0)">
+            <svg width="1080" height="1950" xmlns="http://www.w3.org/2000/svg" style="background-image: url(img/3bg.jpeg);background-size:100% auto;background-position:top center;background-repeat:no-repeat;width:100%;height:100%;">
+            </svg>
+          </foreignobject>
+          <g transform="translate(1080, 1950)">
+            <text x="400" y="60" fill="#fff" style="font-size:36px">向上滑，价格更香。</text>
+          </g>
+        </g>
+      </g>
+    </svg>
+
+  </section>
+
+</body></html>
